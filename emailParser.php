@@ -30,7 +30,7 @@ while($line = fgets($file))
     {
         $inGroup = true;
 
-        preg_match('/<mailto:([0-9a-zA-Z_\.]+@[0-9a-zA-Z_\.]+\.[0-9a-zA-Z_\.]+)>/', $line, $matches);
+        preg_match('/<mailto:([0-9a-zA-Z_\.\-]+@[0-9a-zA-Z_\.\-]+\.[0-9a-zA-Z_\.\-]+)>/', $line, $matches);
         if (isset($matches[1])) {
             $email = $matches[1];
             echo $email."\n";
