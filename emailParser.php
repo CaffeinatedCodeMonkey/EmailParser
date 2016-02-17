@@ -11,7 +11,7 @@ if(!isset($argv[1]) || !file_exists($argv[1]))
     exit;
 }
 
-if(!isset($argv[2]) || !file_exists($argv[2]))
+if(!isset($argv[2]))
 {
     echo "Please pass an output file.\n";
     exit;
